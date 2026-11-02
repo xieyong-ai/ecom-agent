@@ -1,8 +1,10 @@
 # 电商售后判责引擎
 
+[![regression](https://github.com/xieyong-ai/-ecom-agent/actions/workflows/regression.yml/badge.svg?branch=main)](https://github.com/xieyong-ai/-ecom-agent/actions/workflows/regression.yml)
+
 > 把售后工单判进规则，把语义理解留给模型——输出的是一份可审计的判定单，不是一个聊天框。
 
-> **本地门禁**：双击 `check.bat`（矩阵审计 + 212 条判定回归 + 基线 diff）。仓库已推 Gitee 与 GitHub；GitHub Actions 已注册 `.github/workflows/regression.yml`，徽章仅在 `regression` 跑绿后加。
+> **本地门禁**：双击 `check.bat`（矩阵审计 + 212 条判定回归 + 基线 diff）。同一套门禁由 GitHub Actions 的 `regression` 工作流在 `main` 上执行，最近一次运行已跑绿。
 
 ## 零、日常怎么打开（30 秒）
 
