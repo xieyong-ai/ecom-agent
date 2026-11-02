@@ -1,0 +1,2253 @@
+[
+ {
+  "case_id": "E001",
+  "expected": "SUPPORT_RETURN",
+  "actual": "SUPPORT_RETURN",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-101",
+   "R-301"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E002",
+  "expected": "SUPPORT_RETURN",
+  "actual": "SUPPORT_RETURN",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-101",
+   "R-301"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E003",
+  "expected": "SUPPORT_RETURN",
+  "actual": "SUPPORT_RETURN",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-101",
+   "R-301"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E004",
+  "expected": "SUPPORT_RETURN",
+  "actual": "SUPPORT_RETURN",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-101",
+   "R-301"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E005",
+  "expected": "SUPPORT_RETURN",
+  "actual": "SUPPORT_RETURN",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-101",
+   "R-301"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E006",
+  "expected": "SUPPORT_RETURN",
+  "actual": "SUPPORT_RETURN",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-101",
+   "R-301"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E007",
+  "expected": "SUPPORT_RETURN",
+  "actual": "SUPPORT_RETURN",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-101",
+   "R-301"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E008",
+  "expected": "SUPPORT_RETURN",
+  "actual": "SUPPORT_RETURN",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-101",
+   "R-301"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E009",
+  "expected": "SUPPORT_RETURN",
+  "actual": "SUPPORT_RETURN",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-101",
+   "R-301"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E010",
+  "expected": "SUPPORT_RETURN",
+  "actual": "SUPPORT_RETURN",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-101",
+   "R-301"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E011",
+  "expected": "SUPPORT_RETURN",
+  "actual": "SUPPORT_RETURN",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-101",
+   "R-301"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E012",
+  "expected": "SUPPORT_RETURN",
+  "actual": "SUPPORT_RETURN",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-101",
+   "R-301"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E013",
+  "expected": "SUPPORT_RETURN",
+  "actual": "SUPPORT_RETURN",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-101",
+   "R-301"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E014",
+  "expected": "SUPPORT_RETURN",
+  "actual": "SUPPORT_RETURN",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-101",
+   "R-301"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E015",
+  "expected": "SUPPORT_RETURN",
+  "actual": "SUPPORT_RETURN",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-101",
+   "R-301"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E016",
+  "expected": "SUPPORT_RETURN",
+  "actual": "SUPPORT_RETURN",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-101",
+   "R-301"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E017",
+  "expected": "SUPPORT_RETURN",
+  "actual": "SUPPORT_RETURN",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-101",
+   "R-301"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E018",
+  "expected": "SUPPORT_RETURN",
+  "actual": "SUPPORT_RETURN",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-101",
+   "R-301"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E019",
+  "expected": "SUPPORT_RETURN",
+  "actual": "SUPPORT_RETURN",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-101",
+   "R-301"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E020",
+  "expected": "SUPPORT_RETURN",
+  "actual": "SUPPORT_RETURN",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-101",
+   "R-301"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E021",
+  "expected": "SUPPORT_RETURN",
+  "actual": "SUPPORT_RETURN",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-101",
+   "R-301"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E022",
+  "expected": "SUPPORT_RETURN",
+  "actual": "SUPPORT_RETURN",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-101",
+   "R-301"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E023",
+  "expected": "SUPPORT_EXCHANGE",
+  "actual": "SUPPORT_EXCHANGE",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-104",
+   "R-301"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E024",
+  "expected": "SUPPORT_EXCHANGE",
+  "actual": "SUPPORT_EXCHANGE",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-104",
+   "R-301"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E025",
+  "expected": "SUPPORT_EXCHANGE",
+  "actual": "SUPPORT_EXCHANGE",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-104",
+   "R-301"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E026",
+  "expected": "SUPPORT_EXCHANGE",
+  "actual": "SUPPORT_EXCHANGE",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-104",
+   "R-301"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E027",
+  "expected": "SUPPORT_EXCHANGE",
+  "actual": "SUPPORT_EXCHANGE",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-104",
+   "R-301"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E028",
+  "expected": "SUPPORT_EXCHANGE",
+  "actual": "SUPPORT_EXCHANGE",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-104",
+   "R-301"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E029",
+  "expected": "SUPPORT_EXCHANGE",
+  "actual": "SUPPORT_EXCHANGE",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-104",
+   "R-301"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E030",
+  "expected": "SUPPORT_EXCHANGE",
+  "actual": "SUPPORT_EXCHANGE",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-104",
+   "R-301"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E031",
+  "expected": "SUPPORT_EXCHANGE",
+  "actual": "SUPPORT_EXCHANGE",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-104",
+   "R-301"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E032",
+  "expected": "SUPPORT_EXCHANGE",
+  "actual": "SUPPORT_EXCHANGE",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-104",
+   "R-301"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E033",
+  "expected": "SUPPORT_EXCHANGE",
+  "actual": "SUPPORT_EXCHANGE",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-104",
+   "R-301"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E034",
+  "expected": "SUPPORT_EXCHANGE",
+  "actual": "SUPPORT_EXCHANGE",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-104",
+   "R-301"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E035",
+  "expected": "SUPPORT_EXCHANGE",
+  "actual": "SUPPORT_EXCHANGE",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-104",
+   "R-301"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E036",
+  "expected": "SUPPORT_EXCHANGE",
+  "actual": "SUPPORT_EXCHANGE",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-104",
+   "R-301"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E037",
+  "expected": "SUPPORT_EXCHANGE",
+  "actual": "SUPPORT_EXCHANGE",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-104",
+   "R-301"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E038",
+  "expected": "SUPPORT_EXCHANGE",
+  "actual": "SUPPORT_EXCHANGE",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-104",
+   "R-301"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E039",
+  "expected": "SUPPORT_EXCHANGE",
+  "actual": "SUPPORT_EXCHANGE",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-104",
+   "R-301"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E040",
+  "expected": "SUPPORT_EXCHANGE",
+  "actual": "SUPPORT_EXCHANGE",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-104",
+   "R-301"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E041",
+  "expected": "SUPPORT_EXCHANGE",
+  "actual": "SUPPORT_EXCHANGE",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-104",
+   "R-301"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E042",
+  "expected": "SUPPORT_EXCHANGE",
+  "actual": "SUPPORT_EXCHANGE",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-104",
+   "R-301"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E043",
+  "expected": "SUPPORT_EXCHANGE",
+  "actual": "SUPPORT_EXCHANGE",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-104",
+   "R-301"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E044",
+  "expected": "SUPPORT_EXCHANGE",
+  "actual": "SUPPORT_EXCHANGE",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-104",
+   "R-301"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E045",
+  "expected": "SUPPORT_REFUND_ONLY",
+  "actual": "SUPPORT_REFUND_ONLY",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-201"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E046",
+  "expected": "SUPPORT_REFUND_ONLY",
+  "actual": "SUPPORT_REFUND_ONLY",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-201"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E047",
+  "expected": "SUPPORT_REFUND_ONLY",
+  "actual": "SUPPORT_REFUND_ONLY",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-201"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E048",
+  "expected": "SUPPORT_REFUND_ONLY",
+  "actual": "SUPPORT_REFUND_ONLY",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-201"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E049",
+  "expected": "SUPPORT_REFUND_ONLY",
+  "actual": "SUPPORT_REFUND_ONLY",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-201"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E050",
+  "expected": "SUPPORT_REFUND_ONLY",
+  "actual": "SUPPORT_REFUND_ONLY",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-201"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E051",
+  "expected": "SUPPORT_REFUND_ONLY",
+  "actual": "SUPPORT_REFUND_ONLY",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-201"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E052",
+  "expected": "SUPPORT_REFUND_ONLY",
+  "actual": "SUPPORT_REFUND_ONLY",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-201"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E053",
+  "expected": "SUPPORT_REFUND_ONLY",
+  "actual": "SUPPORT_REFUND_ONLY",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-201"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E054",
+  "expected": "SUPPORT_REFUND_ONLY",
+  "actual": "SUPPORT_REFUND_ONLY",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-201"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E055",
+  "expected": "SUPPORT_REFUND_ONLY",
+  "actual": "SUPPORT_REFUND_ONLY",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-201"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E056",
+  "expected": "SUPPORT_REFUND_ONLY",
+  "actual": "SUPPORT_REFUND_ONLY",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-201"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E057",
+  "expected": "SUPPORT_REFUND_ONLY",
+  "actual": "SUPPORT_REFUND_ONLY",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-201"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E058",
+  "expected": "SUPPORT_REFUND_ONLY",
+  "actual": "SUPPORT_REFUND_ONLY",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-201"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E059",
+  "expected": "SUPPORT_REFUND_ONLY",
+  "actual": "SUPPORT_REFUND_ONLY",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-201"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E060",
+  "expected": "SUPPORT_REFUND_ONLY",
+  "actual": "SUPPORT_REFUND_ONLY",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-201"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E061",
+  "expected": "SUPPORT_REFUND_ONLY",
+  "actual": "SUPPORT_REFUND_ONLY",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-201"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E062",
+  "expected": "SUPPORT_REFUND_ONLY",
+  "actual": "SUPPORT_REFUND_ONLY",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-201"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E063",
+  "expected": "SUPPORT_REFUND_ONLY",
+  "actual": "SUPPORT_REFUND_ONLY",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-201"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E064",
+  "expected": "SUPPORT_REFUND_ONLY",
+  "actual": "SUPPORT_REFUND_ONLY",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-201"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E065",
+  "expected": "SUPPORT_REFUND_ONLY",
+  "actual": "SUPPORT_REFUND_ONLY",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-201"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E066",
+  "expected": "REJECT_OVERDUE",
+  "actual": "REJECT_OVERDUE",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-105"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E067",
+  "expected": "REJECT_OVERDUE",
+  "actual": "REJECT_OVERDUE",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-105"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E068",
+  "expected": "REJECT_OVERDUE",
+  "actual": "REJECT_OVERDUE",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-105"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E069",
+  "expected": "REJECT_OVERDUE",
+  "actual": "REJECT_OVERDUE",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-105"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E070",
+  "expected": "REJECT_OVERDUE",
+  "actual": "REJECT_OVERDUE",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-105"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E071",
+  "expected": "REJECT_OVERDUE",
+  "actual": "REJECT_OVERDUE",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-105"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E072",
+  "expected": "REJECT_OVERDUE",
+  "actual": "REJECT_OVERDUE",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-105"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E073",
+  "expected": "REJECT_OVERDUE",
+  "actual": "REJECT_OVERDUE",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-105"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E074",
+  "expected": "REJECT_OVERDUE",
+  "actual": "REJECT_OVERDUE",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-105"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E075",
+  "expected": "REJECT_OVERDUE",
+  "actual": "REJECT_OVERDUE",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-105"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E076",
+  "expected": "REJECT_OVERDUE",
+  "actual": "REJECT_OVERDUE",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-105"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E077",
+  "expected": "REJECT_OVERDUE",
+  "actual": "REJECT_OVERDUE",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-105"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E078",
+  "expected": "REJECT_OVERDUE",
+  "actual": "REJECT_OVERDUE",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-105"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E079",
+  "expected": "REJECT_OVERDUE",
+  "actual": "REJECT_OVERDUE",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-105"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E080",
+  "expected": "REJECT_OVERDUE",
+  "actual": "REJECT_OVERDUE",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-105"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E081",
+  "expected": "REJECT_OVERDUE",
+  "actual": "REJECT_OVERDUE",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-105"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E082",
+  "expected": "REJECT_OVERDUE",
+  "actual": "REJECT_OVERDUE",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-105"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E083",
+  "expected": "REJECT_OVERDUE",
+  "actual": "REJECT_OVERDUE",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-105"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E084",
+  "expected": "REJECT_OVERDUE",
+  "actual": "REJECT_OVERDUE",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-105"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E085",
+  "expected": "REJECT_OVERDUE",
+  "actual": "REJECT_OVERDUE",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-105"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E086",
+  "expected": "REJECT_OVERDUE",
+  "actual": "REJECT_OVERDUE",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-105"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E087",
+  "expected": "REJECT_EXEMPT_CATEGORY",
+  "actual": "REJECT_EXEMPT_CATEGORY",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-102"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E088",
+  "expected": "REJECT_EXEMPT_CATEGORY",
+  "actual": "REJECT_EXEMPT_CATEGORY",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-102"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E089",
+  "expected": "REJECT_EXEMPT_CATEGORY",
+  "actual": "REJECT_EXEMPT_CATEGORY",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-102"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E090",
+  "expected": "REJECT_EXEMPT_CATEGORY",
+  "actual": "REJECT_EXEMPT_CATEGORY",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-102"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E091",
+  "expected": "REJECT_EXEMPT_CATEGORY",
+  "actual": "REJECT_EXEMPT_CATEGORY",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-102"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E092",
+  "expected": "REJECT_EXEMPT_CATEGORY",
+  "actual": "REJECT_EXEMPT_CATEGORY",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-102"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E093",
+  "expected": "REJECT_EXEMPT_CATEGORY",
+  "actual": "REJECT_EXEMPT_CATEGORY",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-102"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E094",
+  "expected": "REJECT_EXEMPT_CATEGORY",
+  "actual": "REJECT_EXEMPT_CATEGORY",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-102"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E095",
+  "expected": "REJECT_EXEMPT_CATEGORY",
+  "actual": "REJECT_EXEMPT_CATEGORY",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-102"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E096",
+  "expected": "REJECT_EXEMPT_CATEGORY",
+  "actual": "REJECT_EXEMPT_CATEGORY",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-102"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E097",
+  "expected": "REJECT_EXEMPT_CATEGORY",
+  "actual": "REJECT_EXEMPT_CATEGORY",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-102"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E098",
+  "expected": "REJECT_EXEMPT_CATEGORY",
+  "actual": "REJECT_EXEMPT_CATEGORY",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-102"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E099",
+  "expected": "REJECT_EXEMPT_CATEGORY",
+  "actual": "REJECT_EXEMPT_CATEGORY",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-102"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E100",
+  "expected": "REJECT_EXEMPT_CATEGORY",
+  "actual": "REJECT_EXEMPT_CATEGORY",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-102"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E101",
+  "expected": "REJECT_EXEMPT_CATEGORY",
+  "actual": "REJECT_EXEMPT_CATEGORY",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-102"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E102",
+  "expected": "REJECT_EXEMPT_CATEGORY",
+  "actual": "REJECT_EXEMPT_CATEGORY",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-102"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E103",
+  "expected": "REJECT_EXEMPT_CATEGORY",
+  "actual": "REJECT_EXEMPT_CATEGORY",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-102"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E104",
+  "expected": "REJECT_EXEMPT_CATEGORY",
+  "actual": "REJECT_EXEMPT_CATEGORY",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-102"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E105",
+  "expected": "REJECT_EXEMPT_CATEGORY",
+  "actual": "REJECT_EXEMPT_CATEGORY",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-102"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E106",
+  "expected": "REJECT_EXEMPT_CATEGORY",
+  "actual": "REJECT_EXEMPT_CATEGORY",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-102"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E107",
+  "expected": "REJECT_EXEMPT_CATEGORY",
+  "actual": "REJECT_EXEMPT_CATEGORY",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-102"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E108",
+  "expected": "NEED_EVIDENCE",
+  "actual": "NEED_EVIDENCE",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-103"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E109",
+  "expected": "NEED_EVIDENCE",
+  "actual": "NEED_EVIDENCE",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-103"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E110",
+  "expected": "NEED_EVIDENCE",
+  "actual": "NEED_EVIDENCE",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-103"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E111",
+  "expected": "NEED_EVIDENCE",
+  "actual": "NEED_EVIDENCE",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-103"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E112",
+  "expected": "NEED_EVIDENCE",
+  "actual": "NEED_EVIDENCE",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-103"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E113",
+  "expected": "NEED_EVIDENCE",
+  "actual": "NEED_EVIDENCE",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-103"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E114",
+  "expected": "NEED_EVIDENCE",
+  "actual": "NEED_EVIDENCE",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-103"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E115",
+  "expected": "NEED_EVIDENCE",
+  "actual": "NEED_EVIDENCE",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-103"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E116",
+  "expected": "NEED_EVIDENCE",
+  "actual": "NEED_EVIDENCE",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-103"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E117",
+  "expected": "NEED_EVIDENCE",
+  "actual": "NEED_EVIDENCE",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-103"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E118",
+  "expected": "NEED_EVIDENCE",
+  "actual": "NEED_EVIDENCE",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-103"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E119",
+  "expected": "NEED_EVIDENCE",
+  "actual": "NEED_EVIDENCE",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-103"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E120",
+  "expected": "NEED_EVIDENCE",
+  "actual": "NEED_EVIDENCE",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-103"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E121",
+  "expected": "NEED_EVIDENCE",
+  "actual": "NEED_EVIDENCE",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-103"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E122",
+  "expected": "NEED_EVIDENCE",
+  "actual": "NEED_EVIDENCE",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-103"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E123",
+  "expected": "NEED_EVIDENCE",
+  "actual": "NEED_EVIDENCE",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-103"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E124",
+  "expected": "NEED_EVIDENCE",
+  "actual": "NEED_EVIDENCE",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-103"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E125",
+  "expected": "NEED_EVIDENCE",
+  "actual": "NEED_EVIDENCE",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-103"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E126",
+  "expected": "NEED_EVIDENCE",
+  "actual": "NEED_EVIDENCE",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-103"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E127",
+  "expected": "NEED_EVIDENCE",
+  "actual": "NEED_EVIDENCE",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-103"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E128",
+  "expected": "NEED_EVIDENCE",
+  "actual": "NEED_EVIDENCE",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-103"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E129",
+  "expected": "NEED_HUMAN",
+  "actual": "NEED_HUMAN",
+  "confidence": 1.0,
+  "policy_refs": [
+   "R-402"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E130",
+  "expected": "NEED_HUMAN",
+  "actual": "NEED_HUMAN",
+  "confidence": 1.0,
+  "policy_refs": [
+   "R-402"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E131",
+  "expected": "NEED_HUMAN",
+  "actual": "NEED_HUMAN",
+  "confidence": 1.0,
+  "policy_refs": [
+   "R-402"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E132",
+  "expected": "NEED_HUMAN",
+  "actual": "NEED_HUMAN",
+  "confidence": 1.0,
+  "policy_refs": [
+   "R-402"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E133",
+  "expected": "NEED_HUMAN",
+  "actual": "NEED_HUMAN",
+  "confidence": 1.0,
+  "policy_refs": [
+   "R-402"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E134",
+  "expected": "NEED_HUMAN",
+  "actual": "NEED_HUMAN",
+  "confidence": 1.0,
+  "policy_refs": [
+   "R-402"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E135",
+  "expected": "NEED_HUMAN",
+  "actual": "NEED_HUMAN",
+  "confidence": 1.0,
+  "policy_refs": [
+   "R-402"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E136",
+  "expected": "NEED_HUMAN",
+  "actual": "NEED_HUMAN",
+  "confidence": 1.0,
+  "policy_refs": [
+   "R-402"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E137",
+  "expected": "NEED_HUMAN",
+  "actual": "NEED_HUMAN",
+  "confidence": 1.0,
+  "policy_refs": [
+   "R-402"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E138",
+  "expected": "NEED_HUMAN",
+  "actual": "NEED_HUMAN",
+  "confidence": 1.0,
+  "policy_refs": [
+   "R-402"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E139",
+  "expected": "NEED_HUMAN",
+  "actual": "NEED_HUMAN",
+  "confidence": 1.0,
+  "policy_refs": [
+   "R-402"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E140",
+  "expected": "NEED_HUMAN",
+  "actual": "NEED_HUMAN",
+  "confidence": 1.0,
+  "policy_refs": [
+   "R-402"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E141",
+  "expected": "NEED_HUMAN",
+  "actual": "NEED_HUMAN",
+  "confidence": 1.0,
+  "policy_refs": [
+   "R-402"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E142",
+  "expected": "NEED_HUMAN",
+  "actual": "NEED_HUMAN",
+  "confidence": 1.0,
+  "policy_refs": [
+   "R-402"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E143",
+  "expected": "NEED_HUMAN",
+  "actual": "NEED_HUMAN",
+  "confidence": 1.0,
+  "policy_refs": [
+   "R-402"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E144",
+  "expected": "NEED_HUMAN",
+  "actual": "NEED_HUMAN",
+  "confidence": 1.0,
+  "policy_refs": [
+   "R-402"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E145",
+  "expected": "NEED_HUMAN",
+  "actual": "NEED_HUMAN",
+  "confidence": 1.0,
+  "policy_refs": [
+   "R-402"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E146",
+  "expected": "NEED_HUMAN",
+  "actual": "NEED_HUMAN",
+  "confidence": 1.0,
+  "policy_refs": [
+   "R-402"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E147",
+  "expected": "NEED_HUMAN",
+  "actual": "NEED_HUMAN",
+  "confidence": 1.0,
+  "policy_refs": [
+   "R-402"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E148",
+  "expected": "NEED_HUMAN",
+  "actual": "NEED_HUMAN",
+  "confidence": 1.0,
+  "policy_refs": [
+   "R-402"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E149",
+  "expected": "NEED_HUMAN",
+  "actual": "NEED_HUMAN",
+  "confidence": 1.0,
+  "policy_refs": [
+   "R-402"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E150",
+  "expected": "NEED_HUMAN",
+  "actual": "NEED_HUMAN",
+  "confidence": 1.0,
+  "policy_refs": [
+   "R-402"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E151",
+  "expected": "SUPPORT_RETURN",
+  "actual": "SUPPORT_RETURN",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-101",
+   "R-301"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E152",
+  "expected": "NEED_EVIDENCE",
+  "actual": "NEED_EVIDENCE",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-103"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E153",
+  "expected": "NEED_EVIDENCE",
+  "actual": "NEED_EVIDENCE",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-103"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E154",
+  "expected": "SUPPORT_EXCHANGE",
+  "actual": "SUPPORT_EXCHANGE",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-104",
+   "R-301"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E155",
+  "expected": "REJECT_OVERDUE",
+  "actual": "REJECT_OVERDUE",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-105"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E156",
+  "expected": "REJECT_OVERDUE",
+  "actual": "REJECT_OVERDUE",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-105"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E157",
+  "expected": "NEED_HUMAN",
+  "actual": "NEED_HUMAN",
+  "confidence": 1.0,
+  "policy_refs": [
+   "R-504"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E158",
+  "expected": "NEED_HUMAN",
+  "actual": "NEED_HUMAN",
+  "confidence": 1.0,
+  "policy_refs": [
+   "R-504"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E159",
+  "expected": "NEED_EVIDENCE",
+  "actual": "NEED_EVIDENCE",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-103"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E160",
+  "expected": "REJECT_OVERDUE",
+  "actual": "REJECT_OVERDUE",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-105"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E161",
+  "expected": "NEED_HUMAN",
+  "actual": "NEED_HUMAN",
+  "confidence": 1.0,
+  "policy_refs": [
+   "R-402"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E162",
+  "expected": "REJECT_DUPLICATE",
+  "actual": "REJECT_DUPLICATE",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-501"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E163",
+  "expected": "GUIDE_REJECT_ON_DELIVERY",
+  "actual": "GUIDE_REJECT_ON_DELIVERY",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-202",
+   "R-301"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E164",
+  "expected": "NEED_EVIDENCE",
+  "actual": "NEED_EVIDENCE",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-103"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E165",
+  "expected": "NEED_EVIDENCE",
+  "actual": "NEED_EVIDENCE",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-103"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E166",
+  "expected": "NEED_EVIDENCE",
+  "actual": "NEED_EVIDENCE",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-103"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E167",
+  "expected": "NEED_HUMAN",
+  "actual": "NEED_HUMAN",
+  "confidence": 1.0,
+  "policy_refs": [
+   "R-402"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E168",
+  "expected": "NEED_HUMAN",
+  "actual": "NEED_HUMAN",
+  "confidence": 1.0,
+  "policy_refs": [
+   "R-402"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E169",
+  "expected": "REJECT_CLOSED_ORDER",
+  "actual": "REJECT_CLOSED_ORDER",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-502"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E170",
+  "expected": "NEED_HUMAN",
+  "actual": "NEED_HUMAN",
+  "confidence": 1.0,
+  "policy_refs": [
+   "R-503"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E171",
+  "expected": "NEED_HUMAN",
+  "actual": "NEED_HUMAN",
+  "confidence": 1.0,
+  "policy_refs": [
+   "R-201",
+   "R-504"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E172",
+  "expected": "SUPPORT_EXCHANGE",
+  "actual": "SUPPORT_EXCHANGE",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-104",
+   "R-301"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E173",
+  "expected": "NEED_EVIDENCE",
+  "actual": "NEED_EVIDENCE",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-103"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E174",
+  "expected": "SUPPORT_RETURN",
+  "actual": "SUPPORT_RETURN",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-101",
+   "R-301"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E175",
+  "expected": "SUPPORT_REFUND_ONLY",
+  "actual": "SUPPORT_REFUND_ONLY",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-201"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E176",
+  "expected": "NEED_EVIDENCE",
+  "actual": "NEED_EVIDENCE",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-103"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E177",
+  "expected": "REJECT_OVERDUE",
+  "actual": "REJECT_OVERDUE",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-105"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E178",
+  "expected": "NEED_EVIDENCE",
+  "actual": "NEED_EVIDENCE",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-103"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E179",
+  "expected": "REJECT_CLOSED_ORDER",
+  "actual": "REJECT_CLOSED_ORDER",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-502"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E180",
+  "expected": "NEED_EVIDENCE",
+  "actual": "NEED_EVIDENCE",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-103"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E181",
+  "expected": "REJECT_OVERDUE",
+  "actual": "REJECT_OVERDUE",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-105"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E182",
+  "expected": "NEED_HUMAN",
+  "actual": "NEED_HUMAN",
+  "confidence": 1.0,
+  "policy_refs": [
+   "R-402"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E183",
+  "expected": "SUPPORT_RETURN",
+  "actual": "SUPPORT_RETURN",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-103",
+   "R-301"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E184",
+  "expected": "NEED_EVIDENCE",
+  "actual": "NEED_EVIDENCE",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-103"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E185",
+  "expected": "SUPPORT_EXCHANGE",
+  "actual": "SUPPORT_EXCHANGE",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-104",
+   "R-301"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E186",
+  "expected": "SUPPORT_RETURN",
+  "actual": "SUPPORT_RETURN",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-103",
+   "R-301"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E187",
+  "expected": "SUPPORT_RETURN",
+  "actual": "SUPPORT_RETURN",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-103",
+   "R-301"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E188",
+  "expected": "NEED_HUMAN",
+  "actual": "NEED_HUMAN",
+  "confidence": 1.0,
+  "policy_refs": [
+   "R-402"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E189",
+  "expected": "REJECT_EXEMPT_CATEGORY",
+  "actual": "REJECT_EXEMPT_CATEGORY",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-102"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E190",
+  "expected": "REJECT_OVERDUE",
+  "actual": "REJECT_OVERDUE",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-105"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E191",
+  "expected": "NEED_HUMAN",
+  "actual": "NEED_HUMAN",
+  "confidence": 1.0,
+  "policy_refs": [
+   "R-402"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E192",
+  "expected": "GUIDE_REJECT_ON_DELIVERY",
+  "actual": "GUIDE_REJECT_ON_DELIVERY",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-202",
+   "R-301"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E193",
+  "expected": "GUIDE_REJECT_ON_DELIVERY",
+  "actual": "GUIDE_REJECT_ON_DELIVERY",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-202",
+   "R-301"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E194",
+  "expected": "REJECT_DUPLICATE",
+  "actual": "REJECT_DUPLICATE",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-501"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E195",
+  "expected": "NEED_EVIDENCE",
+  "actual": "NEED_EVIDENCE",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-103"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E196",
+  "expected": "NEED_HUMAN",
+  "actual": "NEED_HUMAN",
+  "confidence": 1.0,
+  "policy_refs": [
+   "R-402"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E197",
+  "expected": "SUPPORT_REFUND_ONLY",
+  "actual": "SUPPORT_REFUND_ONLY",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-201"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E198",
+  "expected": "SUPPORT_REFUND_ONLY",
+  "actual": "SUPPORT_REFUND_ONLY",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-201"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E199",
+  "expected": "SUPPORT_RETURN",
+  "actual": "SUPPORT_RETURN",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-101",
+   "R-301"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E200",
+  "expected": "REJECT_OVERDUE",
+  "actual": "REJECT_OVERDUE",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-105"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E201",
+  "expected": "NEED_HUMAN",
+  "actual": "NEED_HUMAN",
+  "confidence": 1.0,
+  "policy_refs": [
+   "R-402"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E202",
+  "expected": "SUPPORT_EXCHANGE",
+  "actual": "SUPPORT_EXCHANGE",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-104",
+   "R-301"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E203",
+  "expected": "SUPPORT_EXCHANGE",
+  "actual": "SUPPORT_EXCHANGE",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-104",
+   "R-301"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E204",
+  "expected": "NEED_EVIDENCE",
+  "actual": "NEED_EVIDENCE",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-103"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E205",
+  "expected": "REJECT_CLOSED_ORDER",
+  "actual": "REJECT_CLOSED_ORDER",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-502"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E206",
+  "expected": "NEED_HUMAN",
+  "actual": "NEED_HUMAN",
+  "confidence": 1.0,
+  "policy_refs": [
+   "R-503"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E207",
+  "expected": "NEED_HUMAN",
+  "actual": "NEED_HUMAN",
+  "confidence": 1.0,
+  "policy_refs": [
+   "R-503"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E208",
+  "expected": "POLICY_ANSWER",
+  "actual": "POLICY_ANSWER",
+  "confidence": null,
+  "policy_refs": [
+   "R-301",
+   "R-104"
+  ],
+  "consult": {
+   "answer": "关于退货流程和运费承担，平台规则是这样规定的：\n\n**运费由谁承担，取决于退货原因（R-301）：**\n\n| 退货原因 | 寄回运费 |\n|---|---|\n| 七天无理由 | 买家承担；若订单含运费险，由保险赔付 |\n| 质量问题 | 卖家承担；用户先垫付的，退款时一并返还 |\n| 卖家发错货/漏发 | 卖家承担，全额退款并补偿运费 |\n| 未发货取消 | 不产生物流，无运费 |\n\n**关于流程**：规则库中只检索到上述运费承担条款，以及质量问题换货（R-104）的适用条件；**具体的退货操作步骤（在哪里提交申请、审核时长、退款到账时效等）规则库未覆盖，建议转人工**确认，我不便凭经验补充。\n\n**顺带说明你这单 ORD10001 的时间情况**（仅作事实说明，不构成受理结论）：订单已签收 2 天，七天无理由还剩 5 天，质量问题退货窗口还剩 28 天，质量问题换货窗口还剩 13 天。若你后续要针对这单提出退货或换货，可以再告诉我，我按对应规则帮你核对条件。\n\n另外提醒：我没有退款、改单或批准售后的权限，任何资金处理都需要通过正式售后入口或人工客服完成。",
+   "policy_refs": [
+    "R-301",
+    "R-104"
+   ],
+   "tool_trace": [
+    {
+     "step": 1,
+     "tool": "search_policy",
+     "args": {
+      "question": "退货流程怎么走，退货运费谁承担"
+     },
+     "ok": true,
+     "output": "{\"matches\": [{\"ref\": \"R-601\", \"title\": \"政策咨询：不进入判定\", \"score\": 23.797, \"text\": \"- **依据**：咨询与执行是两类不同的请求。咨询只回答规则本身，不对具体订单作出结论。\\n- **适用条件**：用户仅询问退换货规则、流程、时限、运费由谁承担，未对某一订单提出执行诉求\\n  - 例：\\\"退货流程怎么走\\\"、\\\"七天无理由是什么意思\\\"、\\\"质量问题退货运费谁出\\\"\\n  - 反例：\\\"我要退货\\\"（有执行诉求）、\\\"这单能退吗\\\"（指向具体订单，属执行诉求）\\n- **判定结果**：`POLICY_ANSWER`（不产生判定结论，不挂退款金额）\\n- **说明**：若把咨询当诉求处理，会出现\\\"问一句流程，得到一份拒绝受理单\\\"的荒谬结果。咨询应由知识检索链路依据本文件作答，判定链路直接放行。\\n- **非终态**：用户问完规则后可继续提出执行诉求，届时重新判定。\"}, {\"ref\": \"R-301\", \"title\": \"运费承担\", \"score\": 10.287, \"text\": \"- **依据**：平台《售后服务规则》第 4.2 条\\n- **规则**：\\n  | 退货原因 | 寄回运费 | 说明 |\\n  |---|---|---|\\n  | 七天无理由 | 买家承担 | 若订单含运费险，由保险赔…",
+     "refs": [
+      "R-601",
+      "R-301",
+      "R-104",
+      "R-202"
+     ]
+    },
+    {
+     "step": 1,
+     "tool": "query_order",
+     "args": {
+      "order_id": "ORD10001"
+     },
+     "ok": true,
+     "output": "{\"order_id\": \"ORD10001\", \"status\": \"已签收\", \"days_since_delivery\": 2, \"amount\": 328.0, \"exempt_reason\": null, \"is_duplicated\": false}"
+    },
+    {
+     "step": 1,
+     "tool": "calc_return_window",
+     "args": {
+      "order_id": "ORD10001"
+     },
+     "ok": true,
+     "output": "{\"order_id\": \"ORD10001\", \"status\": \"已签收\", \"days_since_delivery\": 2, \"no_reason\": {\"limit_days\": 7, \"days_left\": 5, \"within\": true}, \"quality_return\": {\"limit_days\": 30, \"days_left\": 28, \"within\": true}, \"quality_exchange\": {\"limit_days\": 15, \"days_left\": 13, \"within\": true}}"
+    }
+   ]
+  }
+ },
+ {
+  "case_id": "E209",
+  "expected": "REJECT_OVERDUE",
+  "actual": "REJECT_OVERDUE",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-106"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E210",
+  "expected": "NEED_HUMAN",
+  "actual": "NEED_HUMAN",
+  "confidence": 1.0,
+  "policy_refs": [
+   "R-202",
+   "R-504"
+  ],
+  "consult": null
+ },
+ {
+  "case_id": "E211",
+  "expected": "POLICY_ANSWER",
+  "actual": "POLICY_ANSWER",
+  "confidence": null,
+  "policy_refs": [],
+  "consult": {
+   "answer": "关于发票开具的问题，规则库中没有对应的条款，我无法给出准确答复，建议转人工客服确认。\n\n另外说明一下您这单的情况：ORD10005 目前状态为「已发货」，物流仍在途、尚未签收。需要提醒的是，在途状态下平台无法修改收货地址；如果您后续有退货、退款或拒收的打算，可以再告诉我，我帮您核对适用的规则。",
+   "policy_refs": [],
+   "tool_trace": [
+    {
+     "step": 1,
+     "tool": "search_policy",
+     "args": {
+      "question": "开发票 发票开具规则"
+     },
+     "ok": true,
+     "output": "{\"matches\": [{\"ref\": \"R-202\", \"title\": \"运输在途订单\", \"score\": 5.872, \"text\": \"- **依据**：平台《交易规则》第 5.3 条\\n- **适用条件**：订单状态为「已发货」，物流显示在途未签收，**且用户提出了退货 / 退款 / 拒收诉求**\\n- **判定结果**：`GUIDE_REJECT_ON_DELIVERY`，引导用户拒收，拒收后退款\\n- **前置条件（重要）**：与 R-201 同一原则——不替用户产生账务动作。在途状态下用户说\\\"快递到哪了\\\"\\\"能开发票吗\\\"并不包含退货意思，此时不得回复\\\"建议拒收、全额退款\\\"，应按 R-504 转物流客服答复。退货意愿的判定口径：意图为无理由/质量问题，或工单文本明确出现退货/退款/拒收字样，二者满足其一即视为要退。\\n- **说明**：\\n  - 在途订单**不可修改收货地址**（地址变更需联系承运商，平台无法操作）\\n  - 用户可拒收，包裹退回仓库后 1–3 个工作日退款\\n  - 生鲜类在途订单拒收可能产生损耗，需在话术中提示\\n- **运费承担**：无理由拒收由买家承担退回运费；商品破损导致的拒收由卖家承担（见 R-301）\"}, {\"ref\": \"R-402\", \"title\": \"大额订单强制人工复核\", \"score\": 0.05, \"te…",
+     "refs": [
+      "R-202",
+      "R-402",
+      "R-401",
+      "R-301"
+     ]
+    },
+    {
+     "step": 1,
+     "tool": "query_order",
+     "args": {
+      "order_id": "ORD10005"
+     },
+     "ok": true,
+     "output": "{\"order_id\": \"ORD10005\", \"status\": \"已发货\", \"days_since_delivery\": null, \"amount\": 158.0, \"exempt_reason\": null, \"is_duplicated\": false}"
+    }
+   ]
+  }
+ },
+ {
+  "case_id": "E212",
+  "expected": "GUIDE_REJECT_ON_DELIVERY",
+  "actual": "GUIDE_REJECT_ON_DELIVERY",
+  "confidence": 0.95,
+  "policy_refs": [
+   "R-202",
+   "R-301",
+   "R-103"
+  ],
+  "consult": null
+ }
+]

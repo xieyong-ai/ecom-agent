@@ -1,0 +1,24 @@
+services:
+  ecom-agent:
+    build:
+      context: .
+      args:
+        # 默认清华源；海外网络可设 PIP_INDEX_URL=https://pypi.org/simple 覆盖。
+        PIP_INDEX_URL: ${PIP_INDEX_URL:-https://pypi.tuna.tsinghua.edu.cn/simple}
+    image: ecom-agent:local
+    container_name: ecom-agent
+    ports:
+      # 宿主端口可覆盖：Windows 上 Hyper-V 会预留 8484–8583 等动态端口段，
+      # 8501 绑不上时用 ECOM_PORT=9501 docker compose up -d。
+      - "${ECOM_PORT:-8501}:8501"
+    # 密钥只在运行时注入，不写进镜像。没有 .env 也能启动：
+    # 规则引擎与关键词基线可用，咨询 Agent 会明确报错而不是假装成功。
+    env_file:
+      - path: .env
+        required: false
+    environment:
+      ECOM_LLM_MODEL: ${ECOM_LLM_MODEL:-deepseek-chat}
+    volumes:
+      # 数据只读挂载：容器不能改评测数据；要改数据请改宿主机后重启。
+      - ./data:/app/data:ro
+    restart: unless-stopped

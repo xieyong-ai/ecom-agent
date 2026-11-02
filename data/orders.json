@@ -1,0 +1,831 @@
+{
+  "_meta": {
+    "description": "模拟订单库。日期以 2026-10-28 为当前时间基准，覆盖七天无理由期内/超期、生鲜、定制、在途、大额、已退款等全部判定分支。",
+    "schema_version": "1.0"
+  },
+  "orders": [
+    {
+      "order_id": "ORD10001",
+      "user_id": "U1001",
+      "user_name": "王蕾",
+      "phone": "138****6721",
+      "status": "已签收",
+      "created_at": "2026-10-24 10:12",
+      "paid_at": "2026-10-24 10:15",
+      "shipped_at": "2026-10-25 09:30",
+      "delivered_at": "2026-10-26 14:20",
+      "amount": 328.0,
+      "payment_method": "微信支付",
+      "address": "浙江省杭州市西湖区文三路 90 号 3 幢 502",
+      "items": [
+        {
+          "sku": "SKU10021",
+          "name": "真皮女士单鞋 米白色 38 码",
+          "qty": 1,
+          "price": 328.0,
+          "category": "鞋靴",
+          "is_fresh": false,
+          "is_custom": false,
+          "sealed": true
+        }
+      ],
+      "logistics": {
+        "company": "顺丰速运",
+        "tracking_no": "SF1234567890123",
+        "traces": [
+          {
+            "time": "2026-10-25 09:30",
+            "desc": "快件已从杭州仓发出"
+          },
+          {
+            "time": "2026-10-26 08:05",
+            "desc": "快件到达杭州西湖营业点"
+          },
+          {
+            "time": "2026-10-26 14:20",
+            "desc": "快件已签收，签收人：本人"
+          }
+        ]
+      },
+      "after_sale": [],
+      "remark": "",
+      "expected_decision": "SUPPORT_RETURN",
+      "expected_evidence": false,
+      "expected_refs": [
+        "R-101",
+        "R-301"
+      ],
+      "label_quality": "gold",
+      "user_input": "我前天买的那双鞋不想要了，能退吗"
+    },
+    {
+      "order_id": "ORD10002",
+      "user_id": "U1002",
+      "user_name": "李哲",
+      "phone": "139****3345",
+      "status": "已签收",
+      "created_at": "2026-10-12 20:41",
+      "paid_at": "2026-10-12 20:44",
+      "shipped_at": "2026-10-13 11:00",
+      "delivered_at": "2026-10-15 16:30",
+      "amount": 1299.0,
+      "payment_method": "支付宝",
+      "address": "江苏省南京市鼓楼区中山北路 200 号 12 楼",
+      "items": [
+        {
+          "sku": "SKU20034",
+          "name": "家用电磁炉 2200W 触控款",
+          "qty": 1,
+          "price": 1299.0,
+          "category": "厨房电器",
+          "is_fresh": false,
+          "is_custom": false,
+          "sealed": false
+        }
+      ],
+      "logistics": {
+        "company": "京东物流",
+        "tracking_no": "JD9988776655",
+        "traces": [
+          {
+            "time": "2026-10-13 11:00",
+            "desc": "商品已出库"
+          },
+          {
+            "time": "2026-10-15 16:30",
+            "desc": "已签收，签收人：门卫代收"
+          }
+        ]
+      },
+      "after_sale": [],
+      "remark": "用户此前咨询过一次面板划痕问题",
+      "expected_decision": "NEED_EVIDENCE",
+      "expected_evidence": false,
+      "expected_refs": [
+        "R-103"
+      ],
+      "label_quality": "gold",
+      "user_input": "电磁炉面板上有划痕，能退吗"
+    },
+    {
+      "order_id": "ORD10003",
+      "user_id": "U1003",
+      "user_name": "张敏",
+      "phone": "137****8890",
+      "status": "已签收",
+      "created_at": "2026-09-17 09:02",
+      "paid_at": "2026-09-17 09:05",
+      "shipped_at": "2026-09-18 10:20",
+      "delivered_at": "2026-09-20 13:40",
+      "amount": 599.0,
+      "payment_method": "微信支付",
+      "address": "上海市浦东新区张江路 66 号 B 座 1801",
+      "items": [
+        {
+          "sku": "SKU30011",
+          "name": "商务双肩包 15.6 寸 深灰",
+          "qty": 1,
+          "price": 599.0,
+          "category": "箱包",
+          "is_fresh": false,
+          "is_custom": false,
+          "sealed": false
+        }
+      ],
+      "logistics": {
+        "company": "中通快递",
+        "tracking_no": "ZT5566778899",
+        "traces": [
+          {
+            "time": "2026-09-18 10:20",
+            "desc": "已揽收"
+          },
+          {
+            "time": "2026-09-20 13:40",
+            "desc": "已签收，签收人：本人"
+          }
+        ]
+      },
+      "after_sale": [],
+      "remark": "",
+      "expected_decision": "REJECT_OVERDUE",
+      "expected_evidence": false,
+      "expected_refs": [
+        "R-105"
+      ],
+      "label_quality": "gold",
+      "user_input": "这个包我上个月买的，现在不喜欢了，退了吧"
+    },
+    {
+      "order_id": "ORD10004",
+      "user_id": "U1004",
+      "user_name": "陈浩",
+      "phone": "135****2211",
+      "status": "待发货",
+      "created_at": "2026-10-27 22:10",
+      "paid_at": "2026-10-27 22:13",
+      "shipped_at": null,
+      "delivered_at": null,
+      "amount": 2599.0,
+      "payment_method": "微信支付",
+      "address": "广东省深圳市南山区科技园南路 18 号 A 栋 905",
+      "items": [
+        {
+          "sku": "SKU40008",
+          "name": "智能手机 8GB+256GB 星空黑",
+          "qty": 1,
+          "price": 2599.0,
+          "category": "手机数码",
+          "is_fresh": false,
+          "is_custom": false,
+          "sealed": true
+        }
+      ],
+      "logistics": null,
+      "after_sale": [],
+      "remark": "仓库预计 10-29 出库",
+      "expected_decision": "NEED_HUMAN",
+      "expected_evidence": false,
+      "expected_refs": [
+        "R-402"
+      ],
+      "label_quality": "gold",
+      "user_input": "手机不要了，帮我取消订单"
+    },
+    {
+      "order_id": "ORD10005",
+      "user_id": "U1005",
+      "user_name": "刘洋",
+      "phone": "136****7788",
+      "status": "已发货",
+      "created_at": "2026-10-25 15:30",
+      "paid_at": "2026-10-25 15:32",
+      "shipped_at": "2026-10-26 09:00",
+      "delivered_at": null,
+      "amount": 158.0,
+      "payment_method": "支付宝",
+      "address": "北京市朝阳区建国路 88 号 SOHO 现代城 6 号楼 1102",
+      "items": [
+        {
+          "sku": "SKU50012",
+          "name": "纯棉宽松短袖 T 恤 黑色 L",
+          "qty": 2,
+          "price": 79.0,
+          "category": "服饰",
+          "is_fresh": false,
+          "is_custom": false,
+          "sealed": true
+        }
+      ],
+      "logistics": {
+        "company": "圆通速递",
+        "tracking_no": "YT1122334455",
+        "traces": [
+          {
+            "time": "2026-10-26 09:00",
+            "desc": "已揽收，发往北京转运中心"
+          },
+          {
+            "time": "2026-10-27 21:40",
+            "desc": "已到达北京朝阳分拨中心"
+          }
+        ]
+      },
+      "after_sale": [],
+      "remark": "",
+      "expected_decision": "GUIDE_REJECT_ON_DELIVERY",
+      "expected_evidence": false,
+      "expected_refs": [
+        "R-202"
+      ],
+      "label_quality": "gold",
+      "user_input": "T 恤还没收到，我不想要了"
+    },
+    {
+      "order_id": "ORD10006",
+      "user_id": "U1006",
+      "user_name": "赵雪",
+      "phone": "133****4455",
+      "status": "已签收",
+      "created_at": "2026-10-24 18:20",
+      "paid_at": "2026-10-24 18:22",
+      "shipped_at": "2026-10-25 06:00",
+      "delivered_at": "2026-10-25 18:10",
+      "amount": 89.0,
+      "payment_method": "微信支付",
+      "address": "四川省成都市武侯区天府大道 555 号 2 单元 803",
+      "items": [
+        {
+          "sku": "SKU60001",
+          "name": "智利进口车厘子 2J 级 1kg",
+          "qty": 1,
+          "price": 89.0,
+          "category": "生鲜果蔬",
+          "is_fresh": true,
+          "is_custom": false,
+          "sealed": false,
+          "exempt_reason": "生鲜易腐类"
+        }
+      ],
+      "logistics": {
+        "company": "顺丰冷链",
+        "tracking_no": "SFLL8899001122",
+        "traces": [
+          {
+            "time": "2026-10-25 06:00",
+            "desc": "冷链发出，全程温控"
+          },
+          {
+            "time": "2026-10-25 18:10",
+            "desc": "已签收，签收人：本人"
+          }
+        ]
+      },
+      "after_sale": [],
+      "remark": "",
+      "expected_decision": "REJECT_EXEMPT_CATEGORY",
+      "expected_evidence": false,
+      "expected_refs": [
+        "R-102"
+      ],
+      "label_quality": "gold",
+      "user_input": "车厘子不想要了，可以退吗"
+    },
+    {
+      "order_id": "ORD10007",
+      "user_id": "U1007",
+      "user_name": "孙鹏",
+      "phone": "188****9012",
+      "status": "已签收",
+      "created_at": "2026-10-20 11:00",
+      "paid_at": "2026-10-20 11:03",
+      "shipped_at": "2026-10-22 14:00",
+      "delivered_at": "2026-10-23 10:15",
+      "amount": 468.0,
+      "payment_method": "微信支付",
+      "address": "湖北省武汉市洪山区珞瑜路 129 号 7 栋 301",
+      "items": [
+        {
+          "sku": "SKU70003",
+          "name": "定制水晶相册 20 页 刻字款",
+          "qty": 1,
+          "price": 468.0,
+          "category": "定制礼品",
+          "is_fresh": false,
+          "is_custom": true,
+          "sealed": false,
+          "exempt_reason": "按用户要求定制"
+        }
+      ],
+      "logistics": {
+        "company": "德邦快递",
+        "tracking_no": "DB3344556677",
+        "traces": [
+          {
+            "time": "2026-10-22 14:00",
+            "desc": "定制完成，已出库"
+          },
+          {
+            "time": "2026-10-23 10:15",
+            "desc": "已签收，签收人：本人"
+          }
+        ]
+      },
+      "after_sale": [],
+      "remark": "刻字内容为用户指定，不可二次销售",
+      "expected_decision": "REJECT_EXEMPT_CATEGORY",
+      "expected_evidence": false,
+      "expected_refs": [
+        "R-102"
+      ],
+      "label_quality": "gold",
+      "user_input": "相册不想要了，退掉吧"
+    },
+    {
+      "order_id": "ORD10008",
+      "user_id": "U1008",
+      "user_name": "周琳",
+      "phone": "150****3344",
+      "status": "已退款",
+      "created_at": "2026-10-05 13:20",
+      "paid_at": "2026-10-05 13:22",
+      "shipped_at": "2026-10-06 10:00",
+      "delivered_at": "2026-10-08 15:00",
+      "amount": 199.0,
+      "payment_method": "支付宝",
+      "address": "陕西省西安市雁塔区高新路 25 号 5 号楼 601",
+      "items": [
+        {
+          "sku": "SKU80002",
+          "name": "保温杯 316 不锈钢 500ml",
+          "qty": 1,
+          "price": 199.0,
+          "category": "家居日用",
+          "is_fresh": false,
+          "is_custom": false,
+          "sealed": true
+        }
+      ],
+      "logistics": {
+        "company": "韵达快递",
+        "tracking_no": "YD7788990011",
+        "traces": [
+          {
+            "time": "2026-10-06 10:00",
+            "desc": "已揽收"
+          },
+          {
+            "time": "2026-10-08 15:00",
+            "desc": "已签收"
+          },
+          {
+            "time": "2026-10-12 11:00",
+            "desc": "退货已签收，退款已完成"
+          }
+        ]
+      },
+      "after_sale": [
+        {
+          "ticket_id": "AS20261010-001",
+          "type": "退货退款",
+          "status": "已完成",
+          "created_at": "2026-10-10 09:12",
+          "refund_amount": 199.0,
+          "reason": "七天无理由"
+        }
+      ],
+      "remark": "",
+      "expected_decision": "REJECT_DUPLICATE",
+      "expected_evidence": false,
+      "expected_refs": [
+        "R-501"
+      ],
+      "label_quality": "gold",
+      "user_input": "上周那个保温杯的退款怎么还没到账，你们是不是没退"
+    },
+    {
+      "order_id": "ORD10009",
+      "user_id": "U1009",
+      "user_name": "吴强",
+      "phone": "186****5522",
+      "status": "已签收",
+      "created_at": "2026-10-20 19:00",
+      "paid_at": "2026-10-20 19:02",
+      "shipped_at": "2026-10-21 09:00",
+      "delivered_at": "2026-10-22 11:30",
+      "amount": 5800.0,
+      "payment_method": "微信支付",
+      "address": "福建省厦门市思明区软件园二期望海路 21 号 3 楼",
+      "items": [
+        {
+          "sku": "SKU90001",
+          "name": "轻薄笔记本电脑 14 寸 16GB+512GB",
+          "qty": 1,
+          "price": 5800.0,
+          "category": "电脑办公",
+          "is_fresh": false,
+          "is_custom": false,
+          "sealed": false,
+          "exempt_reason": "数码产品已激活"
+        }
+      ],
+      "logistics": {
+        "company": "顺丰速运",
+        "tracking_no": "SF6677889900",
+        "traces": [
+          {
+            "time": "2026-10-21 09:00",
+            "desc": "已从深圳仓发出"
+          },
+          {
+            "time": "2026-10-22 11:30",
+            "desc": "已签收，签收人：本人"
+          }
+        ]
+      },
+      "after_sale": [],
+      "remark": "已激活系统，属数码产品激活情形",
+      "expected_decision": "NEED_HUMAN",
+      "expected_evidence": false,
+      "expected_refs": [
+        "R-402"
+      ],
+      "label_quality": "gold",
+      "user_input": "笔记本不想要了，退了吧"
+    },
+    {
+      "order_id": "ORD10010",
+      "user_id": "U1010",
+      "user_name": "郑丽",
+      "phone": "159****1188",
+      "status": "已签收",
+      "created_at": "2026-10-15 08:40",
+      "paid_at": "2026-10-15 08:43",
+      "shipped_at": "2026-10-16 14:00",
+      "delivered_at": "2026-10-18 17:00",
+      "amount": 2450.0,
+      "payment_method": "支付宝",
+      "address": "山东省青岛市市南区香港中路 76 号 9 楼",
+      "items": [
+        {
+          "sku": "SKU11005",
+          "name": "滚筒洗衣机 10kg 变频",
+          "qty": 1,
+          "price": 2450.0,
+          "category": "大家电",
+          "is_fresh": false,
+          "is_custom": false,
+          "sealed": false
+        }
+      ],
+      "logistics": {
+        "company": "日日顺物流",
+        "tracking_no": "RRS11223344",
+        "traces": [
+          {
+            "time": "2026-10-16 14:00",
+            "desc": "已出库，预约送装"
+          },
+          {
+            "time": "2026-10-18 17:00",
+            "desc": "已签收并完成安装"
+          }
+        ]
+      },
+      "after_sale": [],
+      "remark": "",
+      "expected_decision": "NEED_HUMAN",
+      "expected_evidence": false,
+      "expected_refs": [
+        "R-402"
+      ],
+      "label_quality": "gold",
+      "user_input": "洗衣机转起来有异响，质量问题，我要退"
+    },
+    {
+      "order_id": "ORD10011",
+      "user_id": "U1011",
+      "user_name": "冯涛",
+      "phone": "132****6677",
+      "status": "已签收",
+      "created_at": "2026-10-21 16:00",
+      "paid_at": "2026-10-21 16:03",
+      "shipped_at": "2026-10-22 10:00",
+      "delivered_at": "2026-10-24 12:00",
+      "amount": 429.0,
+      "payment_method": "微信支付",
+      "address": "河南省郑州市金水区农业路 108 号 2 单元 704",
+      "items": [
+        {
+          "sku": "SKU12007",
+          "name": "轻量跑步鞋 男款 42 码 灰蓝",
+          "qty": 1,
+          "price": 429.0,
+          "category": "鞋靴",
+          "is_fresh": false,
+          "is_custom": false,
+          "sealed": false
+        }
+      ],
+      "logistics": {
+        "company": "申通快递",
+        "tracking_no": "ST2200330044",
+        "traces": [
+          {
+            "time": "2026-10-22 10:00",
+            "desc": "已揽收"
+          },
+          {
+            "time": "2026-10-24 12:00",
+            "desc": "已签收，签收人：本人"
+          }
+        ]
+      },
+      "after_sale": [],
+      "remark": "用户反馈鞋底开胶",
+      "expected_decision": "SUPPORT_RETURN",
+      "expected_evidence": true,
+      "expected_refs": [
+        "R-103",
+        "R-301"
+      ],
+      "label_quality": "gold",
+      "user_input": "鞋底开胶了，质量问题要退货，照片已经传了"
+    },
+    {
+      "order_id": "ORD10012",
+      "user_id": "U1012",
+      "user_name": "何云",
+      "phone": "151****2233",
+      "status": "已签收",
+      "created_at": "2026-10-26 21:10",
+      "paid_at": "2026-10-26 21:12",
+      "shipped_at": "2026-10-27 08:00",
+      "delivered_at": "2026-10-27 15:20",
+      "amount": 76.0,
+      "payment_method": "微信支付",
+      "address": "湖南省长沙市岳麓区麓谷大道 627 号 4 栋 1101",
+      "items": [
+        {
+          "sku": "SKU13002",
+          "name": "氨基酸洗发水 500ml 清爽型",
+          "qty": 1,
+          "price": 76.0,
+          "category": "个护美妆",
+          "is_fresh": false,
+          "is_custom": false,
+          "sealed": false,
+          "exempt_reason": "已拆封个护用品"
+        }
+      ],
+      "logistics": {
+        "company": "中通快递",
+        "tracking_no": "ZT9900112233",
+        "traces": [
+          {
+            "time": "2026-10-27 08:00",
+            "desc": "已揽收"
+          },
+          {
+            "time": "2026-10-27 15:20",
+            "desc": "已签收，签收人：本人"
+          }
+        ]
+      },
+      "after_sale": [],
+      "remark": "用户已拆封使用",
+      "expected_decision": "REJECT_EXEMPT_CATEGORY",
+      "expected_evidence": false,
+      "expected_refs": [
+        "R-102"
+      ],
+      "label_quality": "gold",
+      "user_input": "洗发水不想要了"
+    },
+    {
+      "order_id": "ORD10013",
+      "user_id": "U1013",
+      "user_name": "许静",
+      "phone": "137****4410",
+      "status": "待发货",
+      "created_at": "2026-10-27 20:15",
+      "paid_at": "2026-10-27 20:17",
+      "shipped_at": null,
+      "delivered_at": null,
+      "amount": 158.0,
+      "payment_method": "微信支付",
+      "address": "安徽省合肥市蜀山区望江西路 500 号 6 栋 1203",
+      "items": [
+        {
+          "sku": "SKU14001",
+          "name": "透气网面运动袜 3 双装 均码",
+          "qty": 3,
+          "price": 52.67,
+          "category": "服饰",
+          "is_fresh": false,
+          "is_custom": false,
+          "sealed": true,
+          "exempt_reason": null
+        }
+      ],
+      "logistics": null,
+      "after_sale": [],
+      "remark": "仓库尚未出库，用户下单后想取消",
+      "expected_decision": "SUPPORT_REFUND_ONLY",
+      "expected_evidence": false,
+      "expected_refs": [
+        "R-201"
+      ],
+      "label_quality": "gold",
+      "user_input": "袜子还没发货，我不想要了"
+    },
+    {
+      "order_id": "ORD10014",
+      "user_id": "U1014",
+      "user_name": "马超",
+      "phone": "188****7733",
+      "status": "已签收",
+      "created_at": "2026-10-21 09:20",
+      "paid_at": "2026-10-21 09:22",
+      "shipped_at": "2026-10-22 10:00",
+      "delivered_at": "2026-10-23 16:40",
+      "amount": 268.0,
+      "payment_method": "支付宝",
+      "address": "江西省南昌市红谷滩区赣江中大道 1288 号 3 栋 902",
+      "items": [
+        {
+          "sku": "SKU15001",
+          "name": "陶瓷马克杯 350ml 磨砂白",
+          "qty": 1,
+          "price": 268.0,
+          "category": "家居日用",
+          "is_fresh": false,
+          "is_custom": false,
+          "sealed": false,
+          "exempt_reason": null
+        }
+      ],
+      "logistics": {
+        "company": "圆通速递",
+        "tracking_no": "YT4455667788",
+        "traces": [
+          {
+            "time": "2026-10-22 10:00",
+            "desc": "已揽收"
+          },
+          {
+            "time": "2026-10-23 16:40",
+            "desc": "已签收，签收人：本人"
+          }
+        ]
+      },
+      "after_sale": [],
+      "remark": "用户已上传杯口崩瓷照片，要求换货",
+      "expected_decision": "SUPPORT_EXCHANGE",
+      "expected_evidence": true,
+      "expected_refs": [
+        "R-104"
+      ],
+      "label_quality": "gold",
+      "user_input": "马克杯收到的时候杯口崩了，想换一个，照片传了"
+    },
+    {
+      "order_id": "ORD10015",
+      "user_id": "U1015",
+      "user_name": "邓倩",
+      "phone": "139****2288",
+      "status": "已取消",
+      "created_at": "2026-10-26 11:05",
+      "paid_at": "2026-10-26 11:06",
+      "shipped_at": null,
+      "delivered_at": null,
+      "amount": 459.0,
+      "payment_method": "微信支付",
+      "address": "福建省厦门市思明区软件园二期观日路 12 号 4 栋 501",
+      "items": [
+        {
+          "sku": "SKU16001",
+          "name": "无线蓝牙耳机 降噪版 白色",
+          "qty": 1,
+          "price": 459.0,
+          "category": "数码配件",
+          "is_fresh": false,
+          "is_custom": false,
+          "sealed": true,
+          "exempt_reason": null
+        }
+      ],
+      "logistics": null,
+      "after_sale": [],
+      "remark": "用户在发货前自行取消，交易已终止",
+      "expected_decision": "REJECT_CLOSED_ORDER",
+      "expected_evidence": false,
+      "expected_refs": [
+        "R-502"
+      ],
+      "label_quality": "gold",
+      "user_input": "那单我已经取消了，钱怎么还没退给我"
+    },
+    {
+      "order_id": "ORD10016",
+      "user_id": "U1016",
+      "user_name": "宋涛",
+      "phone": "186****9912",
+      "status": "已签收",
+      "created_at": "2026-10-18 15:40",
+      "paid_at": "2026-10-18 15:41",
+      "shipped_at": "2026-10-19 09:00",
+      "delivered_at": "2026-10-21 18:20",
+      "amount": 336.0,
+      "payment_method": "支付宝",
+      "address": "河北省石家庄市裕华区槐安东路 66 号 2 栋 1802",
+      "items": [
+        {
+          "sku": "SKU17001",
+          "name": "筋膜枪 静音款 4 档",
+          "qty": 1,
+          "price": 336.0,
+          "category": "运动户外",
+          "is_fresh": false,
+          "is_custom": false,
+          "sealed": true,
+          "exempt_reason": null
+        }
+      ],
+      "logistics": {
+        "company": "中通快递",
+        "tracking_no": "ZT1122334455",
+        "traces": [
+          {
+            "time": "2026-10-19 09:00",
+            "desc": "已揽收"
+          },
+          {
+            "time": "2026-10-21 18:20",
+            "desc": "已签收，签收人：门卫代收"
+          }
+        ]
+      },
+      "after_sale": [],
+      "remark": "用户否认收到货，签收人为门卫代收，事实存疑",
+      "logistics_disputed": true,
+      "expected_decision": "NEED_HUMAN",
+      "expected_evidence": false,
+      "expected_refs": [
+        "R-503"
+      ],
+      "label_quality": "gold",
+      "user_input": "物流显示签收了，可我根本没收到货，退钱"
+    },
+    {
+      "order_id": "ORD10017",
+      "user_id": "U1017",
+      "user_name": "韩雪",
+      "phone": "135****6677",
+      "status": "已签收",
+      "created_at": "2026-10-09 10:20",
+      "paid_at": "2026-10-09 10:22",
+      "shipped_at": "2026-10-10 08:30",
+      "delivered_at": "2026-10-12 14:10",
+      "amount": 288.0,
+      "payment_method": "微信支付",
+      "address": "江苏省苏州市工业园区星湖街 328 号 5 栋 902",
+      "items": [
+        {
+          "sku": "SKU18001",
+          "name": "加厚冬季家居服 珊瑚绒 女款",
+          "qty": 1,
+          "price": 288.0,
+          "category": "服饰",
+          "is_fresh": false,
+          "is_custom": false,
+          "sealed": true,
+          "exempt_reason": null
+        }
+      ],
+      "logistics": {
+        "company": "韵达快递",
+        "tracking_no": "YD9988776655",
+        "traces": [
+          {
+            "time": "2026-10-10 08:30",
+            "desc": "已揽收"
+          },
+          {
+            "time": "2026-10-12 14:10",
+            "desc": "已签收，签收人：本人"
+          }
+        ]
+      },
+      "after_sale": [],
+      "remark": "签收 16 天，用户主张无理由退货，已过七天无理由期",
+      "expected_decision": "REJECT_OVERDUE",
+      "expected_evidence": false,
+      "expected_refs": [
+        "R-106"
+      ],
+      "label_quality": "gold",
+      "user_input": "这个我不想要了，能退吗"
+    }
+  ]
+}

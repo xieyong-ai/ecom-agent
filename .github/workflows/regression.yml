@@ -1,0 +1,31 @@
+name: regression
+
+# 只跑确定性门禁：矩阵审计 + 212 条判定回归 + 与冻结基线逐条 diff。
+#
+# 为什么没有 pip install：这条路径只依赖标准库（core/rules.py、core/facts.py、
+# core/schema.py 全是 dataclass + json），不 import langchain，所以不需要装依赖，
+# 也就没有"CI 装不上依赖"这类噪音。
+#
+# 为什么咨询 Agent 评测不进 CI：它要调 DeepSeek、要花钱、输出有随机性。
+# 放进流水线只会得到时红时绿的结论，久了就没人认真看红灯了。
+# 咨询评测（33 条 + 20 条公开集）仍手动跑：
+#   python -m eval.run_eval --consultation --semantic
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  gate:
+    name: deterministic gate
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: audit + eval + baseline diff
+        run: python -m tools.check

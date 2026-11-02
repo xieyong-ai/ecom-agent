@@ -1,0 +1,20 @@
+{"question": "网购收到货不满意，几天内能退？", "category": "public_seed", "expected_refs": ["R-101"], "note": "公开规则改写：七天无理由的适用期限"}
+{"question": "退回去的快递费是我出还是商家出？", "category": "public_seed", "expected_refs": ["R-301"], "note": "公开规则改写：运费承担"}
+{"question": "水果到手烂了一半，能退吗？", "category": "public_seed", "expected_refs": ["R-103"], "note": "公开规则改写：生鲜质量问题的退货路径"}
+{"question": "刻了名字的礼物不想要了，可以退吗？", "category": "public_seed", "expected_refs": ["R-102"], "note": "公开规则改写：定制类目除外"}
+{"question": "面膜拆开用了一片，还能七天无理由吗？", "category": "public_seed", "expected_refs": ["R-102"], "note": "公开规则改写：已拆封个护除外"}
+{"question": "手机拆封激活了，七天无理由还能用吗？", "category": "public_seed", "expected_refs": ["R-102"], "note": "公开规则改写：已激活数码除外"}
+{"question": "贴身衣物买回来试穿不合适能退吗？", "category": "public_seed", "expected_refs": ["R-102"], "note": "公开规则改写：贴身衣物除外"}
+{"question": "签收第九天说不想要了，还能退不？", "category": "public_seed", "expected_refs": ["R-106"], "note": "公开规则改写：8-30 日无理由不再支持"}
+{"question": "签收一个多月了，商品有问题还能找售后吗？", "category": "public_seed", "expected_refs": ["R-105"], "note": "公开规则改写：超过 30 日不再受理"}
+{"question": "下了单还没发货，现在取消，钱怎么退？", "category": "public_seed", "expected_refs": ["R-201"], "note": "公开规则改写：未发货取消全额退款"}
+{"question": "快递还在路上，我不想要了，能拦下来吗？", "category": "public_seed", "expected_refs": ["R-202"], "note": "公开规则改写：在途拒收"}
+{"question": "物流显示签收，但我根本没拿到，怎么办？", "category": "public_seed", "expected_refs": ["R-503"], "note": "公开规则改写：签收争议转人工"}
+{"question": "之前退过一次款了，还能再申请退货吗？", "category": "public_seed", "expected_refs": ["R-501"], "note": "公开规则改写：幂等约束"}
+{"question": "订单一直没付款，能申请退货吗？", "category": "public_seed", "expected_refs": ["R-502"], "note": "公开规则改写：待付款无售后标的"}
+{"question": "订单实付是0元，还能退吗？", "category": "public_seed", "expected_refs": ["R-505"], "note": "公开规则改写：金额异常转人工"}
+{"question": "买了三千多的东西，退货是不是要人工审核？", "category": "public_seed", "expected_refs": ["R-402"], "note": "公开规则改写：大额订单强制人工"}
+{"question": "退款会退到原来付款的卡里吗？", "category": "public_seed", "expected_refs": ["R-401"], "note": "公开规则改写：退款原路退回"}
+{"question": "质量问题想换货，多少天之内可以？", "category": "public_seed", "expected_refs": ["R-104"], "note": "公开规则改写：质量换货 15 日"}
+{"question": "质量退货要拍照片还是录视频？", "category": "public_seed", "expected_refs": ["R-103"], "note": "公开规则改写：质量退货凭证"}
+{"question": "买了运费险，退货运费怎么赔？", "category": "public_seed", "expected_refs": ["R-301"], "note": "公开规则改写：运费险由保险赔付"}

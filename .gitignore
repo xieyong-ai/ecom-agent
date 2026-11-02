@@ -1,0 +1,17 @@
+
+# 模型密钥，勿提交
+.env
+
+# 项目内虚拟环境（依赖由 requirements-lock.txt 复现，不入库）
+.venv/
+
+# Python 缓存
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# 编辑器 / 系统
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

@@ -1,0 +1,26 @@
+# 本地环境与密钥
+.venv/
+.env
+.env.*
+
+# 缓存与版本控制
+__pycache__/
+*.py[cod]
+.git/
+.gitignore
+.claude/
+
+# 编辑器 / 系统
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# 启动器（容器内不需要）
+*.bat
+tools/launch.py
+
+# 运行产物（报告在容器内重新生成）
+eval/__pycache__/
+eval/.baseline-*.json
+eval/.after-*.json

@@ -1,0 +1,11 @@
+# 核心依赖。国内镜像对 langchain 常有异常，安装建议：
+#   pip install -r requirements.txt --index-url https://pypi.org/simple
+# 不安装以下任何依赖，项目也能跑：规则引擎、事实层、评测的关键词基线全部使用标准库。
+
+# 咨询 Agent（core/agent.py + core/tools.py）没有引入任何新依赖：
+# 工具调用用 langchain-core 的 bind_tools，工具是普通 Python 函数，
+# 检索是标准库实现的 BM25，脱敏/校验/导入也只用标准库。
+langchain>=1.0
+langchain-openai>=1.0
+langchain-core>=1.0
+streamlit>=1.60
