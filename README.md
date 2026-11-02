@@ -340,7 +340,7 @@ ECOM_PORT=9501 docker compose up -d --wait   # 改访问 http://localhost:9501
 | 数据结构 | dataclass + Enum | 判定单强类型，拒绝自由文本 |
 | 界面 | Streamlit | 判定单 + 依据链 + 决策 trace |
 | 评测 | 自研脚本 | 混淆矩阵、分支指标、转人工指标 |
-| 回归门禁 | `tools/check.py`（`check.bat`） | 一条命令三道闸，零依赖；基线入库，改判定必须显式更新。CI 配置已写但未接 GitHub，日常靠本地跑 |
+| 回归门禁 | `tools/check.py`（`check.bat`）+ GitHub Actions | 一条命令三道闸，零依赖；基线入库，改判定必须显式更新。同一套门禁由 `regression` 工作流在 GitHub 上执行，本地与 CI 结果一致 |
 
 **关于 LangChain 用在哪**：判定链不经过任何 agent 框架——判定顺序由优先级表决定，把"模型决定调哪条规则"这种事交出去是不该发生的。框架只承担模型接入、输出解析、链路编排。这是主动的设计选择，不是能力限制。
 
