@@ -1,6 +1,6 @@
 # 电商售后判责引擎
 
-[![regression](https://github.com/xieyong-ai/-ecom-agent/actions/workflows/regression.yml/badge.svg?branch=main)](https://github.com/xieyong-ai/-ecom-agent/actions/workflows/regression.yml)
+[![regression](https://github.com/xieyong-ai/ecom-agent/actions/workflows/regression.yml/badge.svg?branch=main)](https://github.com/xieyong-ai/ecom-agent/actions/workflows/regression.yml)
 
 > 把售后工单判进规则，把语义理解留给模型——输出的是一份可审计的判定单，不是一个聊天框。
 
