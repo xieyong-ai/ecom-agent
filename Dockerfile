@@ -20,7 +20,8 @@ COPY core ./core
 COPY data ./data
 COPY eval ./eval
 COPY tools ./tools
-COPY docs ./docs
+# 不复制 docs/：运行时（app.py / core / tools）不读文档，而 docs 下可能有
+# 只留本地的求职材料，镜像里不该出现。
 
 # 非 root 运行；eval 报告目录需要可写。
 RUN useradd --create-home --uid 10001 appuser \

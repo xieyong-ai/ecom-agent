@@ -3,12 +3,22 @@
 .env
 .env.*
 
+# 只留本地的求职/设计文档，即使将来重新 COPY docs 也不进镜像
+docs/面试问答手册.md
+docs/面试逐字稿.md
+docs/简历-项目描述.md
+docs/项目设计文档.md
+
 # 缓存与版本控制
 __pycache__/
 *.py[cod]
 .git/
 .gitignore
 .claude/
+.claude-session-backup/
+
+# 本地评测日志（不要打进构建上下文）
+eval/run.log
 
 # 编辑器 / 系统
 .vscode/
