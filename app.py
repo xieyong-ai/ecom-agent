@@ -93,8 +93,8 @@ def load_policy_text(ref: str) -> str:
 def render_consultation(consult: dict) -> None:
     """渲染咨询答复单：答复正文 + 引用条款原文 + 工具调用 trace。
 
-    答复单只有 answer / policy_refs / tool_trace 三个字段，结构上不存在
-    decision——咨询不产生判定结论。
+    答复单只有 answer / policy_refs / tool_trace / pii_redacted 四个字段，
+    结构上不存在 decision——咨询不产生判定结论。
     """
     st.markdown(
         "<div style='padding:14px 18px;border:1px solid #1849a9;border-left:6px solid #1849a9;"
@@ -113,6 +113,13 @@ def render_consultation(consult: dict) -> None:
     for ref in refs:
         with st.expander(f"{ref} —— 查看原文"):
             st.markdown(load_policy_text(ref) or "未找到该条款原文")
+
+    redacted = consult.get("pii_redacted") or {}
+    if redacted:
+        st.caption(
+            "本次咨询文本含个人信息，已在送模型前替换为占位符："
+            + "、".join(f"{k} × {v}" for k, v in redacted.items())
+        )
 
     st.markdown("**工具调用 trace**")
     trace = consult.get("tool_trace") or []
