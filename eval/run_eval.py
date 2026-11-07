@@ -39,6 +39,23 @@ from core.schema import Decision  # noqa: E402
 HUMAN = Decision.NEED_HUMAN
 
 
+def write_report(out: Path, report: str) -> None:
+    """写评测报告；内容未变（忽略「时间」行）就不写。
+
+    报告里的时间是运行时刻，每次跑门禁都会变。若整份重写，
+    `python -m tools.check` 每跑一次都会在 git 里留下一行无意义改动。
+    这里只比较实质内容，内容真变了才落盘，时间行随之更新。
+    """
+    def _strip_time(text: str) -> str:
+        return "\n".join(
+            line for line in text.splitlines() if not line.startswith("- 时间:")
+        )
+
+    if out.exists() and _strip_time(out.read_text(encoding="utf-8")) == _strip_time(report):
+        return
+    out.write_text(report, encoding="utf-8")
+
+
 def run_case(case: dict, facts_store, semantic: bool = False) -> tuple[str, object, object]:
     """单条用例执行。
 
@@ -354,7 +371,7 @@ def run_consultation_suite(cases_path: Path, tag: str = "consultation") -> bool:
 
     report = "\n".join(lines) + "\n"
     out = ROOT / "eval" / f"report-{tag}.md"
-    out.write_text(report, encoding="utf-8")
+    write_report(out, report)
     print(report)
     print(f"报告已写入 {out}")
     return passed == len(rows)
@@ -515,7 +532,7 @@ def main() -> int:
     # README 里引用的两份报告必须能各自复现。
     tag = args.tag or ("semantic" if args.semantic else "baseline")
     out = ROOT / "eval" / f"report-{tag}.md"
-    out.write_text(report, encoding="utf-8")
+    write_report(out, report)
 
     print(report)
     print(f"报告已写入 {out}")
