@@ -20,6 +20,7 @@ from typing import Optional
 
 from pydantic import BaseModel, Field
 
+from core.privacy import redact
 from core.rules import detect_intent, wants_exchange
 from core.schema import Intent
 
@@ -197,8 +198,11 @@ def recognize_ex(text: str) -> tuple[Intent, bool, str]:
     llm = get_llm()
     if llm is None:
         return detect_intent(text), wants_exchange(text), "KEYWORD_NO_KEY"
+    # 只有送模型的文本需要脱敏；关键词降级是本地匹配，用原文不影响隐私。
+    # 占位符保留了"这里有个号码"的语义，意图识别不依赖号码本身。
+    safe_text = redact(text)[0]
     try:
-        r: IntentResult = intent_chain().invoke({"text": text})
+        r: IntentResult = intent_chain().invoke({"text": safe_text})
         raw = _INTENT_ALIASES.get(r.intent.strip().lower(), r.intent.strip())
         if raw not in _INTENT_ENUM:
             return Intent.UNKNOWN, wants_exchange(text), "SEMANTIC"

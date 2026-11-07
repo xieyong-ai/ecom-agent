@@ -35,6 +35,7 @@ from typing import Any
 
 from langchain_core.messages import AIMessage, HumanMessage, SystemMessage, ToolMessage
 
+from core.privacy import redact
 from core.semantics import get_llm
 from core.tools import READ_ONLY_TOOLS, TOOL_MAP, TOOL_NAMES
 
@@ -225,7 +226,10 @@ def run_policy_agent(
     order_id: str | None = None,
     max_iterations: int = MAX_ITERATIONS,
 ) -> dict[str, Any]:
-    """执行一次咨询答复，返回 {"answer", "policy_refs", "tool_trace"}。
+    """执行一次咨询答复，返回 {"answer", "policy_refs", "tool_trace", "pii_redacted"}。
+
+    question 里若含手机号/身份证/银行卡/邮箱，送模型前会被替换成占位符，
+    命中情况记录在 pii_redacted 里——脱敏不该是没人知道做没做的隐形操作。
 
     异常：
         PolicyAgentError —— 未配置 Key / 模型调用失败 / 超过迭代上限 /
@@ -239,10 +243,13 @@ def run_policy_agent(
         )
 
     model = llm.bind_tools(list(READ_ONLY_TOOLS))
+    # 用户原话会发给第三方模型，结构化个人标识先换成占位符。
+    # 占位符保留"这里有个号码"的语义，不影响规则咨询的语义理解。
+    safe_question, pii_hits = redact(question)
     order_line = f"关联订单号：{order_id}" if order_id else "关联订单号：未提供"
     messages: list[Any] = [
         SystemMessage(content=SYSTEM_PROMPT),
-        HumanMessage(content=f"用户咨询：{question}\n{order_line}"),
+        HumanMessage(content=f"用户咨询：{safe_question}\n{order_line}"),
     ]
 
     trace: list[dict[str, Any]] = []
@@ -408,6 +415,7 @@ def run_policy_agent(
         "answer": answer,
         "policy_refs": policy_refs,
         "tool_trace": trace,
+        "pii_redacted": pii_hits,
     }
 
 

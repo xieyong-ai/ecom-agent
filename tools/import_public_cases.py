@@ -51,25 +51,13 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 
+from core.privacy import PLACEHOLDERS, redact  # noqa: E402
 from core.schema import Decision  # noqa: E402
 
 POLICY_FILE = ROOT / "data" / "policies.md"
 DEFAULT_EXISTING = [
     ROOT / "data" / "eval_cases.jsonl",
     ROOT / "data" / "eval_consultation.jsonl",
-]
-
-# 只做"能识别出是高敏信息"的最小集合，不追求覆盖所有写法。
-PII_PATTERNS = [
-    ("<PHONE>", re.compile(r"(?<!\d)1[3-9]\d{9}(?!\d)")),
-    ("<ID>", re.compile(r"(?<!\d)\d{17}[\dXx](?!\d)")),
-    ("<BANK>", re.compile(r"(?<!\d)\d{16,19}(?!\d)")),
-    ("<EMAIL>", re.compile(r"\b[\w.+-]+@[\w-]+\.[\w.-]+\b")),
-    # 详细地址：省/市/区/县 + 路/街/号/栋/室，命中才替换
-    ("<ADDR>", re.compile(
-        r"[一-龥]{2,}(?:省|市|自治区)[一-龥]{0,10}(?:市|区|县)"
-        r"[一-龥A-Za-z0-9\-]{0,20}(?:路|街|道|巷|号|栋|楼|室)[一-龥0-9A-Za-z\-]{0,20}"
-    )),
 ]
 
 PUNCT = re.compile(r"[\s，。！？、；：\"'“”‘’（）()\[\]【】,.!?;:~…—\-_/\\]+")
@@ -82,13 +70,13 @@ def normalize(text: str) -> str:
 
 
 def scrub(text: str) -> tuple[str, int]:
-    """返回（脱敏后的文本, 命中的高敏模式数）。"""
-    hits = 0
-    out = text or ""
-    for placeholder, pattern in PII_PATTERNS:
-        out, n = pattern.subn(placeholder, out)
-        hits += n
-    return out, hits
+    """返回（脱敏后的文本, 命中的高敏模式数）。
+
+    规则统一在 core/privacy.py：离线导入与在线送模型共用一套口径，
+    不维护两份正则——两份迟早会漂移，而漂移的那天没人会发现。
+    """
+    out, hits = redact(text or "")
+    return out, sum(hits.values())
 
 
 def load_policy_refs() -> set[str]:
@@ -243,7 +231,7 @@ def main() -> int:
         q = rec.get("question") or rec.get("user_input") or ""
         cleaned, hits = scrub(q)
         pii_hits += hits
-        placeholders = sum(cleaned.count(p) for p, _ in PII_PATTERNS)
+        placeholders = sum(cleaned.count(p) for p in PLACEHOLDERS)
         if placeholders and len(cleaned) < 8:
             dropped.append((lineno, "脱敏后内容过短，疑似纯隐私文本"))
             continue
