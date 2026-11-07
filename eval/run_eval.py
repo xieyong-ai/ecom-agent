@@ -383,6 +383,11 @@ def main() -> int:
     ap.add_argument("--failures", action="store_true", help="打印失败用例明细")
     ap.add_argument("--semantic", action="store_true", help="意图改用 LangChain 语义层（需配置 ECOM_LLM_API_KEY）")
     ap.add_argument("--consultation", action="store_true", help="运行咨询 Agent 专项评测（需配置 ECOM_LLM_API_KEY）")
+    ap.add_argument("--consultation-cases",
+                    default=str(ROOT / "data" / "eval_consultation.jsonl"),
+                    help="咨询专项用例路径（默认 33 条主集；公开改写集用 data/public/eval_consultation_public.jsonl）")
+    ap.add_argument("--consultation-tag", default="consultation",
+                    help="咨询报告标签，报告写到 eval/report-<tag>.md（公开集用 consultation-public）")
     ap.add_argument("--tag", default="", help="报告标签（如 baseline-v1）")
     ap.add_argument("--dump", default="", help="把逐条结果写入 JSON，用于改造前后逐条比对")
     args = ap.parse_args()
@@ -541,7 +546,9 @@ def main() -> int:
     consultation_ok = True
     if args.consultation:
         print("\n" + "=" * 78)
-        consultation_ok = run_consultation_suite(ROOT / "data" / "eval_consultation.jsonl")
+        consultation_ok = run_consultation_suite(
+            Path(args.consultation_cases), tag=args.consultation_tag
+        )
 
     agent_failures = [r for r in results if r.get("actual") == "AGENT_ERROR"]
     if agent_failures:

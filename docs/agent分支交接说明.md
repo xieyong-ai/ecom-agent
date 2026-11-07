@@ -87,3 +87,31 @@ data/policies.md  # 规则库原文（### R-xxx 标题结构）
 ## 完成后同步文档
 
 `docs/技术文档.md`（§5 语义层补 Agent 小节）、`README.md`（架构图加路径 B）；设计取舍记录（个人文档，不随仓库分发）同步确认咨询分支状态为已落地。
+
+## 交付与验收记录（2026-11-07，数据基准 2025-07-28）
+
+本次交付的验收口径只含两部分，分别落两份报告，不混算：
+
+| 范围 | 用例 | 结果 | 报告（路径 / 时间） |
+|---|---|---|---|
+| 判定回归（含咨询前置拦截） | 212 条 = 150 silver + 62 manual | 语义层 212/212 = 100%；误转人工 0；转人工召回 37/37；对抗拦截 15/15 | `eval/report-semantic.md` / 2026-11-07 20:35 |
+| 咨询 Agent 专项 | 33 条独立用例（`data/eval_consultation.jsonl`，不在 212 条内） | 工具调用与引用可验证性 33/33 = 100%；0 条关键词兜底、0 条 Agent 执行失败；引用精确度 26/36 = 72.2%（宏平均 83.7%），过度引用 8/26 条（额外 10 条），仅度量 | `eval/report-consultation.md` / 2026-11-07 20:37 |
+| 咨询公开改写集（补充） | 20 条（`data/public/eval_consultation_public.jsonl`） | 20/20 通过；引用精确度 20/29 = 69.0%（宏平均 84.2%），过度引用 5/20 条（额外 9 条） | `eval/report-consultation-public.md` / 2026-11-07 19:40 |
+
+口径说明：
+
+- 212 条中 E208 / E211 两条咨询用例按设计路由到 Agent，其余 **210 条仍走 `judge()`**，与非咨询基线逐条一致；`judge()` 未改一行。
+- 咨询集的主指标是**工具调用与引用可验证性**（是否按期望调工具、`policy_refs` 是否来自 `search_policy` 实际返回、答复有无 `decision`、失败是否显式），**不是咨询答复文本准确率**；引用精确度只度量、不参与通过判定。
+- 报告均带 `ruleset v1.0 / prompt v2` 版本行。同一提示词多次运行精确度在 65.8%–72.2% 间抖动，通过/失败稳定，跨版本比较只用同日相邻运行（A/B 记录见 `docs/技术文档.md` §6.6）。
+- 公开改写集报告来自同日 19:40 的运行，20:37 那批只跑了 212 + 33 两条主集，未重跑公开集。
+
+复现命令（前三条需要 `.env` 中的 Key，会产生 API 费用；超过一两分钟请后台执行并落日志）：
+
+```bash
+python -m eval.run_eval --semantic
+python -m eval.run_eval --consultation
+python -m eval.run_eval --consultation --consultation-cases data/public/eval_consultation_public.jsonl --consultation-tag consultation-public
+python -m tools.check          # 13,800 组矩阵审计 + 212 条回归 + 冻结基线 diff，零第三方依赖
+```
+
+回归门禁 `python -m tools.check` 已在 `main` 的 GitHub Actions 实跑通过；咨询评测因需 Key、有费用与随机性，刻意不进流水线。订单时间窗 2025.03–2025.07、基准日 2025-07-28；日期整体平移不改变任何判定（212/212 门禁可证）。
