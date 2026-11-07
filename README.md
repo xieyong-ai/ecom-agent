@@ -294,6 +294,8 @@ ECOM_PORT=9501 docker compose up -d --wait   # 改访问 http://localhost:9501
 > `compose.yaml` 的 `env_file.required: false` 需要 Compose v2.24+；旧版本可删掉 `env_file` 段，改用 `docker compose run -e ECOM_LLM_API_KEY=...`。
 > 容器内也可以跑评测：`docker compose run --rm ecom-agent python -m eval.run_eval`。
 
+**最近一次实测（2026-11-07）**：`docker build` 成功；镜像内确认不存在 `docs/` 与 `.env`，进程以 uid 10001 运行；容器内 `python -m tools.check` 通过（0 违规、212 条判定与基线逐条一致）；compose 启动后容器状态 `(healthy)`，`/_stcore/health` 返回 200。
+
 ## 六、评测结果（212 条判定 + 53 条咨询）
 
 评测集构成：`data/eval_cases.jsonl`，150 条 silver（按标签生成）+ 62 条人工精标（常规变体 27 / 边界 9 / 对抗 15 / 口语化 8 / 混合意图 3）。
