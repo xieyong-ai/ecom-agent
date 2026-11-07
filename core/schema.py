@@ -17,6 +17,8 @@ from datetime import datetime
 from enum import Enum
 from typing import Any
 
+from core import versions
+
 
 class Decision(str, Enum):
     """判定结果枚举。
@@ -151,6 +153,10 @@ class Verdict:
     created_at: str = field(default_factory=lambda: datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
     # 模型辅助时记录中间变量，便于回溯
     model_trace: dict[str, Any] = field(default_factory=dict)
+    # 版本标识：这张单由哪版规则库 + 哪版 Prompt 产出。
+    # 带默认值，judge() 无需改动；回滚时按版本定位基线。
+    ruleset_version: str = field(default_factory=lambda: versions.RULESET_VERSION)
+    prompt_version: str = field(default_factory=lambda: versions.PROMPT_VERSION)
 
     @property
     def need_human(self) -> bool:
@@ -204,6 +210,8 @@ class Verdict:
             "reason": self.reason,
             "created_at": self.created_at,
             "model_trace": self.model_trace,
+            "ruleset_version": self.ruleset_version,
+            "prompt_version": self.prompt_version,
         }
 
     def to_json(self, indent: int = 2) -> str:
@@ -213,7 +221,7 @@ class Verdict:
 if __name__ == "__main__":
     # 自测：构造一张合规判定单，验证校验逻辑
     v = Verdict(
-        ticket_id="T20261028-0001",
+        ticket_id="T20250728-0001",
         order_id="ORD10001",
         decision=Decision.SUPPORT_RETURN,
         refund_amount=328.00,
@@ -228,7 +236,7 @@ if __name__ == "__main__":
 
     print("\n--- 非法用例：拒绝类判定却带退款金额 ---")
     bad = Verdict(
-        ticket_id="T20261028-0002",
+        ticket_id="T20250728-0002",
         decision=Decision.REJECT_OVERDUE,
         refund_amount=199.0,
         policy_refs=["R-105"],

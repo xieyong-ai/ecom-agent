@@ -1,6 +1,7 @@
 # 评测报告 — semantic
 
-- 时间: 2026-11-02 21:03
+- 时间: 2026-11-07 19:46
+- 版本: ruleset v1.0 / prompt v3
 - 用例: 212 条（{'silver': 150, 'manual': 62}）
 - 意图来源: 语义层（LangChain）
 
@@ -66,5 +67,5 @@
 
 | 用例 | 调用工具 | policy_refs | 结果 | 失败原因 |
 |---|---|---|---|---|
-| E208 | search_policy、query_order | R-301、R-104、R-202 | 通过 | — |
+| E208 | search_policy、query_order、search_policy、search_policy | R-301、R-101、R-103 | 通过 | — |
 | E211 | search_policy、query_order | — | 通过 | — |

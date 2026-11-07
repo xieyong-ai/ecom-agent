@@ -74,15 +74,30 @@ _CITE_RULE_V2 = """7. 答复的最后单独一行输出「直接依据」清单�
    这一行由系统解析并从用户可见答复中移除。
 """
 
-# 提示词版本由环境变量切换。默认 v2（「直接依据」清单，引用精确度更高）；
-# 设 ECOM_CONSULT_PROMPT=v1 可回到旧口径，用于复现对比。
+# v3：在 v2「直接依据」口径上补一条引用传递规则——
+# 若某条依据的原文明确指向另一条规则，被指向的条款也一并声明。
+# 起因：C026「生鲜水果坏了能退吗」，v2 两次独立运行都只在声明行写 R-102，
+# 正文却写了「R-102 明确指向 R-103」，导致 policy_refs 少一条、依据链断开。
+_CITE_RULE_V3 = """7. 答复的最后单独一行输出「直接依据」清单，格式严格为：
+   直接依据：R-101、R-301
+   这里只写**直接回答用户问题、支撑答复结论**的条款。仅作为背景、例外、对比而提到的条款
+   （例如解释某条为什么不适用）可以出现在正文，但不要写进这一行。
+   例外：如果某条依据的条款原文**明确指向**另一条规则，被指向的条款属于直接依据，
+   必须一并写出（例：R-102 的例外类目条款注明按 R-103 处理质量问题，则两条都写）。
+   没有可直接作为依据的条款时写：直接依据：无
+   这一行由系统解析并从用户可见答复中移除。
+"""
+
+# 提示词版本由环境变量切换。默认 v2。
+# v3 的 A/B 结论（2026-11-07，33 条主集）：C026 漏引修好了（32/33 → 33/33），
+# 但过度引用从 12/26 涨到 15/26、额外引用从 13 条涨到 21 条，且开始挂不相关条款，
+# 净收益为负，因此不设为默认；保留 v3 入口用于复现这次对比。
 PROMPT_VARIANT = os.getenv("ECOM_CONSULT_PROMPT", "v2").strip().lower()
-if PROMPT_VARIANT not in ("v1", "v2"):
+if PROMPT_VARIANT not in ("v1", "v2", "v3"):
     PROMPT_VARIANT = "v2"
 
-SYSTEM_PROMPT = _PROMPT_HEAD + (
-    _CITE_RULE_V2 if PROMPT_VARIANT == "v2" else _CITE_RULE_V1
-)
+_CITE_RULES = {"v1": _CITE_RULE_V1, "v2": _CITE_RULE_V2, "v3": _CITE_RULE_V3}
+SYSTEM_PROMPT = _PROMPT_HEAD + _CITE_RULES[PROMPT_VARIANT]
 
 # 机器可解析的引用清单行。放在答复末尾，解析后从正文中剔除。
 # v1 用「引用条款」，v2 用「直接依据」；两种都认，便于 A/B 对比。
@@ -374,7 +389,7 @@ def run_policy_agent(
     #
     # v2 只认清单行：正文里作为背景/例外提到的条款不再计入 policy_refs，
     # 用于把"引用"与"提及"分开度量；模型没写清单时仍回退到正文解析。
-    if PROMPT_VARIANT == "v2" and declared_refs is not None:
+    if PROMPT_VARIANT in ("v2", "v3") and declared_refs is not None:
         candidates = declared_refs
     else:
         candidates = (

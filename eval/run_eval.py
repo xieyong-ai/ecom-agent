@@ -26,6 +26,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 
+from core import versions  # noqa: E402
 from core.rules import (  # noqa: E402
     judge,
     judge_text,
@@ -251,6 +252,7 @@ def run_consultation_suite(cases_path: Path, tag: str = "consultation") -> bool:
 
     lines = ["# 咨询 Agent 评测报告 — " + tag]
     lines.append(f"\n- 时间: {datetime.now().strftime('%Y-%m-%d %H:%M')}")
+    lines.append(f"- 版本: {versions.describe()}")
     lines.append(f"- 用例: {len(rows)} 条（独立于 212 条判定回归基线）")
     lines.append(
         f"\n## 总体\n\n| 指标 | 值 |\n|---|---|\n"
@@ -435,6 +437,7 @@ def main() -> int:
     lines = []
     lines.append(f"# 评测报告 — {tag}")
     lines.append(f"\n- 时间: {datetime.now().strftime('%Y-%m-%d %H:%M')}")
+    lines.append(f"- 版本: {versions.describe()}")
     lines.append(f"- 用例: {total} 条（{dict(Counter(r['source'] for r in results))}）")
     lines.append(f"- 意图来源: {mode}")
 
