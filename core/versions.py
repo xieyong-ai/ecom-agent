@@ -22,7 +22,7 @@ import os
 RULESET_VERSION = (os.getenv("ECOM_RULESET_VERSION") or "v1.0").strip() or "v1.0"
 
 #: 咨询 Prompt 口径版本，只允许 v1 / v2 / v3；默认 v2
-#: （v3 修复了 C026 漏引，但过度引用上升，A/B 后被回退，见 core/agent.py 注释）
+#: （v3 当次修复了 C026 漏引，但过度引用上升，A/B 后被回退，见 core/agent.py 注释）
 _P = (os.getenv("ECOM_CONSULT_PROMPT") or "v2").strip().lower()
 PROMPT_VERSION = _P if _P in ("v1", "v2", "v3") else "v2"
 
