@@ -16,6 +16,7 @@ from dataclasses import dataclass, field, asdict
 from datetime import datetime
 from enum import Enum
 from typing import Any
+from uuid import uuid4
 
 from core import versions
 
@@ -157,6 +158,9 @@ class Verdict:
     # 带默认值，judge() 无需改动；回滚时按版本定位基线。
     ruleset_version: str = field(default_factory=lambda: versions.RULESET_VERSION)
     prompt_version: str = field(default_factory=lambda: versions.PROMPT_VERSION)
+    # 判定单单号：同一工单重判（补凭证、追加诉求）会产生多张单，
+    # 下游按本字段幂等、按 ticket_id 归集。带默认值，judge() 无需改动。
+    decision_id: str = field(default_factory=lambda: "D" + uuid4().hex)
 
     @property
     def need_human(self) -> bool:
@@ -198,6 +202,7 @@ class Verdict:
     def to_dict(self) -> dict[str, Any]:
         return {
             "ticket_id": self.ticket_id,
+            "decision_id": self.decision_id,
             "order_id": self.order_id,
             "decision": self.decision.value,
             "decision_label": self.decision.label,
