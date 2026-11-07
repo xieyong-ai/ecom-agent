@@ -21,7 +21,7 @@ import random
 from datetime import datetime, timedelta
 from pathlib import Path
 
-BASE_DATE = datetime(2026, 10, 28, 12, 0, 0)
+BASE_DATE = datetime(2025, 7, 28, 12, 0, 0)
 
 # 类目池：exempt 标记该商品是否属于"不适用七天无理由"的例外类目
 CATEGORY_POOL = {
