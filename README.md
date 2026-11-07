@@ -382,21 +382,30 @@ ecom-agent/
 │   ├── schema.py        # 11 个判定枚举 + 判定单 + 不变量校验
 │   ├── facts.py         # 事实层：订单/物流/时限/例外类目
 │   ├── rules.py         # 规则引擎：按优先级实现 21 个判定分支
-│   └── semantics.py     # 语义层：三条 LCEL 链 + 无 Key 自动降级
+│   ├── semantics.py     # 语义层：三条 LCEL 链 + 无 Key 自动降级
+│   ├── tools.py         # 4 个只读工具（咨询分支专用，无写操作）
+│   ├── agent.py         # 咨询分支最小执行器：≤6 步、引用校验、显式失败
+│   └── versions.py      # 规则库 / Prompt 版本号（写进判定单）
 ├── data/
 │   ├── orders.json       # 17 条 gold
 │   ├── orders_bulk.json  # 1986 条 silver
 │   ├── policies.md       # 规则库（含出处）
-│   └── eval_cases.jsonl  # 212 条评测用例
+│   ├── eval_cases.jsonl  # 212 条判定评测用例
+│   ├── eval_consultation.jsonl        # 33 条咨询专项用例
+│   └── public/eval_consultation_public.jsonl  # 20 条公开改写集
 ├── eval/
-│   ├── run_eval.py       # 评测脚本（混淆矩阵 / 分支指标）
+│   ├── run_eval.py       # 评测脚本（混淆矩阵 / 分支指标 / 咨询专项）
 │   ├── audit_matrix.py   # 规则矩阵审计（不变量 / 条款可追溯 / 文案越界）
+│   ├── compare_runs.py   # 两次评测逐条 diff（门禁用）
 │   ├── report-baseline.md
-│   └── report-semantic.md
+│   ├── report-semantic.md
+│   └── report-consultation*.md  # 咨询报告与各版本存档
 ├── tools/
 │   ├── gen_orders.py     # 按标签生成订单
 │   ├── label_gold.py     # gold 标注
 │   ├── gen_eval_cases.py # 评测集生成
+│   ├── import_public_cases.py  # 公开语料导入（校验 / 脱敏 / 去重 / 记账）
+│   ├── check.py          # 确定性门禁：审计 + 回归 + 基线 diff
 │   └── launch.py         # 启动器：选解释器 + 查端口 + 起服务
 ├── app.py                # Streamlit 演示界面
 ├── start.bat             # 双击启动（Windows，优先用 .venv）
@@ -405,9 +414,11 @@ ecom-agent/
 ├── requirements.txt      # 宽松约束
 ├── requirements-lock.txt # 精确版本（复现用）
 ├── .env.example          # 模型配置模板
+├── .github/workflows/regression.yml  # 确定性门禁 CI（只跑 tools.check）
 └── docs/
     ├── 业务文档.md        # 业务视角：成本、口径、指标、上线运营
     ├── 技术文档.md        # 技术视角：实现、评测、失败模式、扩展
     ├── 数据来源与合规说明.md
-    └── 咨询分支验收报告.md # Agent 改造的逐条验收与已知限制
+    ├── 咨询分支验收报告.md # Agent 改造的逐条验收与已知限制
+    └── agent分支交接说明.md # 任务书 + 交付与验收记录（口径 / 报告路径 / 复现命令）
 ```
